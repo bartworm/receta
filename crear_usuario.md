@@ -15,7 +15,8 @@ with open('people1.csv', 'r') as csvFile:
       #if current rows 2nd value is equal to input, print that row
       if pacientes_file == row[0]:
           print row
-          return row
+          
+      
       else:
         with open('test.csv', 'a') as csvFile:
         writer = csv.writer(csvFile)          #pedir datos, nombres, apellidos, fecha de nacimiento, direccion)
